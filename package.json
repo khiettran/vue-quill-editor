@@ -39,6 +39,7 @@
   ],
   "scripts": {
     "prepare": "npm run build",
+    "prepack": "yarn build",
     "build": "cross-env NODE_ENV=production webpack --config config/build.conf.js",
     "unit": "cross-env BABEL_ENV=test NODE_ENV=testing karma start test/unit/karma.conf.js --watch",
     "test": "cross-env BABEL_ENV=test NODE_ENV=testing karma start test/unit/karma.conf.js --single-run",
